@@ -9,8 +9,9 @@
 // });
 //
 // eventedThing.trigger('meet', 'Sarah');
-// -> 'Hi there!'
 // -> 'Nice to meet you, Sarah.'
+// eventedThing.trigger('meet', 'Berta');
+// -> 'Nice to meet you, Berta.'
 //
 // eventedThing.trigger('whatever');
 // -> nothing happens
