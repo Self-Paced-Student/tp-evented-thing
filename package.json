@@ -1,6 +1,6 @@
 {
   "name": "codeworks-tp-evented-thing",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A Codeworks toy problem to train students",
   "main": "index.js",
   "scripts": {
@@ -36,5 +36,8 @@
     "hooks": {
       "pre-commit": "gulp lint"
     }
+  },
+  "dependencies": {
+    "mocha-junit-reporter": "^2.0.2"
   }
 }
