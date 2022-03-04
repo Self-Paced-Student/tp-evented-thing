@@ -1,10 +1,11 @@
 {
   "name": "codeworks-tp-evented-thing",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A Codeworks toy problem to train students",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test:ci": "mocha test --reporter mocha-junit-reporter"
   },
   "repository": {
     "type": "git",
