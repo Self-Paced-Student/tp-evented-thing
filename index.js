@@ -28,9 +28,9 @@ class EventedThing {
     throw new Error('Second arg must be a function.')
   }
 
-  trigger (label) {
+  trigger (label, ...args) {
     if (this._listen[label]) {
-      this._listen[label]()
+      this._listen[label](...args)
     }
   }
 }
