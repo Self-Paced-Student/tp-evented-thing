@@ -17,8 +17,23 @@
 // -> nothing happens
 
 
-function EventedThing () {
-  this._listen = {};
+class EventedThing {
+  _listen = {}
+
+  on (label, handle) {
+    if (handle instanceof Function) {
+      this._listen[label] = handle;
+      return true;
+    }
+    throw new Error('Second arg must be a function.')
+  }
+
+  trigger (label) {
+    if (this._listen[label]) {
+      this._listen[label]()
+    }
+  }
 }
+
 
 module.exports = new EventedThing;
